@@ -71,7 +71,7 @@ def parseMail(count):  # parsing of count last messages
 
 def getLast():  # last message
     mail = imaplib.IMAP4_SSL("imap.gmail.com", 993)
-    mail.login('lordaleksey1@gmail.com', 'Oleksiy2003')
+    mail.login('Your Google Email', 'Your password')
     mail.select('INBOX')
     result, data = mail.search(None, "ALL")
     ids = data[0].split()
